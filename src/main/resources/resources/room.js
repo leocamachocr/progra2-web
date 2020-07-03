@@ -16,6 +16,3 @@ function getParameterByName(name, url) {
     if (!results[2]) return '';
     return decodeURIComponent(results[2].replace(/\+/g, ' '));
 }
-  function refresh(){location.reload(true);}
-//Función para actualizar cada 4 segundos(4000 milisegundos)
-  setInterval("refresh()",4000);
