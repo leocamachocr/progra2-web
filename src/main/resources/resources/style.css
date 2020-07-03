@@ -1,0 +1,65 @@
+/*#EED16A, #DE5D3B, #C82A3A, #5E2530, #5D7A6B*/
+* {
+  font-family: Roboto,"Helvetica Neue",sans-serif;
+  font-weight: 400;
+  font-style: normal;
+}
+.form-register {
+  margin: auto;
+  width: 50%;
+  border: 1px solid gray;
+  padding: 10px;
+}
+
+input[type=text], input[type=password], input[type=email]  {
+  width: 100%;
+  padding: 12px 20px;
+  margin: 8px 0;
+  display: inline-block;
+  border: 1px solid #ccc;
+  box-sizing: border-box;
+}
+input[type=submit] {
+  background-color: #5E2530;
+  color: white;
+  padding: 14px 20px;
+  margin: 8px 0;
+  border: none;
+  cursor: pointer;
+  width: 100%;
+}
+input:hover {
+  border: 1px solid #5D7A6B;
+}
+
+.sidebar {
+    width:25%;
+    height: 100%;
+    width: 200px;
+    background-color: #fff;
+    position: fixed!important;
+    z-index: 1;
+    overflow: auto;
+}
+.chat-content{
+    margin-left: 25%;
+    padding: 0.01em 16px;
+}
+
+.message-input {
+  position: absolute;
+  width: 50%;
+  bottom: 10px;
+  padding: 25px;
+}
+#message-input-text {
+    width: 60%;
+    display: inline-block;
+    float: left;
+    margin-right: 25px;
+}
+#message-input-send {
+   width: 30%;
+   display:inline-block;
+   float: left;
+}

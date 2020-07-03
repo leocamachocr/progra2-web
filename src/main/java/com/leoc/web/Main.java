@@ -1,6 +1,10 @@
 package com.leoc.web;
 
+import com.leoc.web.filters.LogFilter;
 import com.leoc.web.server.JettyServer;
+import com.leoc.web.servlets.ResourcesServlet;
+import com.leoc.web.servlets.RoomServlet;
+import com.leoc.web.servlets.WelcomeServlet;
 import com.leoc.web.servlets.HomeServlet;
 
 public class Main {
@@ -13,6 +17,10 @@ public class Main {
 
         JettyServer server = new JettyServer(Integer.parseInt(webPort));
         server.registerServlet(HomeServlet.class, "/home");
+        server.registerServlet(WelcomeServlet.class, "/welcome");
+        server.registerServlet(ResourcesServlet.class, "/resource");
+        server.registerServlet(RoomServlet.class, "/room");
+        server.registerFilter(LogFilter.class, "/home");
         server.start();
     }
 }
