@@ -2,10 +2,7 @@ package com.leoc.web;
 
 import com.leoc.web.filters.LogFilter;
 import com.leoc.web.server.JettyServer;
-import com.leoc.web.servlets.ResourcesServlet;
-import com.leoc.web.servlets.RoomServlet;
-import com.leoc.web.servlets.WelcomeServlet;
-import com.leoc.web.servlets.HomeServlet;
+import com.leoc.web.servlets.*;
 
 public class Main {
 
@@ -20,6 +17,7 @@ public class Main {
         server.registerServlet(WelcomeServlet.class, "/welcome");
         server.registerServlet(ResourcesServlet.class, "/resource");
         server.registerServlet(RoomServlet.class, "/room");
+        server.registerServlet(QueryServlet.class, "/query");
         server.registerFilter(LogFilter.class, "/home");
         server.start();
     }
