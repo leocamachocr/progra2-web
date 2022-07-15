@@ -4,7 +4,6 @@ import com.leoc.web.domain.Message;
 import com.leoc.web.domain.User;
 import com.leoc.web.repository.MessageRepository;
 import com.leoc.web.repository.UserRepository;
-import com.leoc.web.servlets.ThymeleafLoader;
 import org.thymeleaf.TemplateEngine;
 import org.thymeleaf.context.WebContext;
 
